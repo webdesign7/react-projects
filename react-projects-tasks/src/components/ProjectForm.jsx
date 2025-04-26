@@ -2,14 +2,15 @@ import { useState } from "react";
 import InputField from "./Input.jsx";
 import Button from "./Button.jsx";
 
-function ProjectForm({ onCancel, onSubmit }) {
-    const [title, setTitle] = useState("");
+function ProjectForm({ onCancel, addProject }) {
+    const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [dueDate, setDueDate] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSubmit({ title, description, dueDate });
+
+        addProject({ name, description, dueDate, tasks: [] });
     };
 
     return (
@@ -21,8 +22,8 @@ function ProjectForm({ onCancel, onSubmit }) {
             <InputField
                 type="text"
                 placeholder="Title"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
             />
             <InputField
                 type="text"

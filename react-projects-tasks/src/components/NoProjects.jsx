@@ -2,9 +2,9 @@ import Button from "./Button.jsx";
 import plusIcon from '../assets/icons/plus.svg';
 import noProjectsImg from '../assets/no-projects.png'
 
-function NoProjects() {
+function NoProjects({onAddNewProject}) {
     return (
-        <div className="h-screen flex flex-col items-center justify-center text-center bg-gray-100">
+        <div className="h-screen flex flex-col items-center justify-center text-center">
             <img
                 src={noProjectsImg}
                 alt="No projects"
@@ -20,7 +20,7 @@ function NoProjects() {
                 text="Add New Project"
                 className="bg-blue-500 text-white hover:bg-blue-600"
                 icon={<img src={plusIcon} alt="Plus Icon" className="w-4 h-4" />}
-                onClick={() => alert("Add New Project clicked!")}
+                onClick={onAddNewProject}
             />
         </div>
     );
