@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLaren Cars Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .gradient-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+<!-- Hero Section -->
+<section class="relative h-screen overflow-hidden">
+    <!-- Video background -->
+    <video autoplay muted loop class="hero-video">
+        <source src="https://cars.mclaren.com/content/dam/mclaren-automotive/homepage/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 gradient-overlay"></div>
+
+    <!-- Hero content -->
+    <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+        <div class="max-w-2xl">
+            <p class="text-red-500 font-bold mb-2 text-lg md:text-xl">W1 WINTER TESTING</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
+                <span class="block">THE REAL SLIPERCAR</span>
+                <span class="block">THE McLAREN</span>
+                <span class="block text-red-500">W1</span>
+            </h1>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="#" class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-sm font-bold text-center transition duration-300">
+                    CONFIGURE YOURS
+                </a>
+                <a href="#" class="border border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-sm font-bold text-center transition duration-300">
+                    EXPLORE W1
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Highlight Section -->
+<section class="py-16 md:py-24 bg-black">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">THE FULL FORCE OF McLAREN</h2>
+            <p class="text-lg md:text-xl text-gray-300">
+                Super light engineering. Extreme power. Face-limed agility. We partneremy draw of our experience into our core to play you the most brilliant driving experience imaginable. This is the full focus of McLaren.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-gray-900 p-8 hover:bg-gray-800 transition duration-300">
+                <p class="text-red-500 font-bold mb-2">FINANCIAL</p>
+                <h3 class="text-2xl font-bold mb-4">PERFORMANCE AMPLIFIED</h3>
+                <p class="text-gray-300 mb-4">MCLAREN ARTURA SPIDER</p>
+                <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                    Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-gray-900 p-8 hover:bg-gray-800 transition duration-300">
+                <p class="text-red-500 font-bold mb-2">PARTNER</p>
+                <h3 class="text-2xl font-bold mb-4">FIVE WITH LANDO</h3>
+                <p class="text-gray-300 mb-4">We take the various steps in a combination for learning how often work is possible from:</p>
+                <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                    Discover more
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-gray-900 p-8 hover:bg-gray-800 transition duration-300">
+                <p class="text-red-500 font-bold mb-2">EXPERIENCE</p>
+                <h3 class="text-2xl font-bold mb-4">BEHIND THE WHEEL</h3>
+                <p class="text-gray-300 mb-4">Melaner Building is a Chinese architecture in China, where it works well with a strong foundation and its surroundings, provide unique opportunities.</p>
+                <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                    Book now
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Car Spotlight Section -->
+<section class="py-16 md:py-24 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <img src="https://cars.mclaren.com/content/dam/mclaren-automotive/models/artura/artura-spider/overview/artura-spider-hero.jpg" alt="McLaren Artura Spider" class="w-full h-auto rounded-sm">
+            </div>
+            <div class="lg:w-1/2">
+                <p class="text-red-500 font-bold mb-2">DSCAR PIASTREX</p>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">MCLAREN 750S</h2>
+                <p class="text-lg text-gray-300 mb-8">
+                    McLaren Building is a Chinese architecture in China, where it works well with a strong foundation and its surroundings, provide unique opportunities.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-sm font-bold text-center transition duration-300">
+                        DISCOVER 750S
+                    </a>
+                    <a href="#" class="border border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-sm font-bold text-center transition duration-300">
+                        WATCH FILM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Alpine.js Interactive Component (Optional) -->
+<section class="py-16 md:py-24 bg-black" x-data="{ activeTab: 'performance' }">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">EXPLORE THE TECHNOLOGY</h2>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Tabs -->
+            <div class="flex justify-center gap-1 mb-12">
+                <button @click="activeTab = 'performance'"
+                        :class="activeTab === 'performance' ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'"
+                        class="px-6 py-3 font-bold transition duration-300">
+                    PERFORMANCE
+                </button>
+                <button @click="activeTab = 'design'"
+                        :class="activeTab === 'design' ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'"
+                        class="px-6 py-3 font-bold transition duration-300">
+                    DESIGN
+                </button>
+                <button @click="activeTab = 'innovation'"
+                        :class="activeTab === 'innovation' ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'"
+                        class="px-6 py-3 font-bold transition duration-300">
+                    INNOVATION
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="bg-gray-900 p-8 md:p-12">
+                <div x-show="activeTab === 'performance'">
+                    <h3 class="text-2xl font-bold mb-4">EXTREME PERFORMANCE</h3>
+                    <p class="text-gray-300 mb-6">
+                        Our vehicles are engineered to deliver unparalleled performance, with cutting-edge aerodynamics and powertrain technology that pushes the boundaries of what's possible.
+                    </p>
+                    <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                        Explore performance
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div x-show="activeTab === 'design'" x-cloak>
+                    <h3 class="text-2xl font-bold mb-4">ICONIC DESIGN</h3>
+                    <p class="text-gray-300 mb-6">
+                        Every McLaren is a masterpiece of design, with flowing lines and purposeful forms that are as beautiful as they are functional, creating an unmistakable presence on the road.
+                    </p>
+                    <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                        Explore design
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div x-show="activeTab === 'innovation'" x-cloak>
+                    <h3 class="text-2xl font-bold mb-4">REVOLUTIONARY INNOVATION</h3>
+                    <p class="text-gray-300 mb-6">
+                        We constantly innovate, developing new technologies and materials that redefine automotive excellence and create the most engaging driving experience possible.
+                    </p>
+                    <a href="#" class="text-red-500 hover:text-red-400 font-bold inline-flex items-center transition duration-300">
+                        Explore innovation
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
