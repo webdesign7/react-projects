@@ -1,6 +1,20 @@
 {
   "opinions": [
     {
+      "id": 1748790665074,
+      "votes": 5,
+      "userName": "Sergiu",
+      "title": "Canschi",
+      "body": "sdf sdf"
+    },
+    {
+      "id": 1748783779550,
+      "votes": 0,
+      "userName": "Sergiu",
+      "title": "Russia is great",
+      "body": "Russia is"
+    },
+    {
       "id": 1,
       "userName": "Maximilian Schwarzmüller",
       "title": "Do yourself a favor and learn React!",
