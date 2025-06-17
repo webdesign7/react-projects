@@ -6,11 +6,11 @@
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  background: #f6f6f6;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#29251c, #2c2306);
-  color: #d9e2f1;
   min-height: 100vh;
 }
 

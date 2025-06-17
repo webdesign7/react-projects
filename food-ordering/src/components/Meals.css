@@ -1,0 +1,23 @@
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.meals-loading, .meals-error {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+@media (max-width: 900px) {
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+} 
