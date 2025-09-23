@@ -1,0 +1,55 @@
+## Me
+For a nextjs project which files and folders should be gitignored ? 
+
+## AI Assistant
+Here’s a solid .gitignore for a typical Next.js app to keep build artifacts, caches, local env files, and editor cruft out of your repo.
+``` gitignore
+# Dependencies
+node_modules/
+.pnp.*
+.pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+
+# Next.js/Tooling caches
+.turbo/
+.swc/
+.eslintcache
+
+# Environment variables (never commit secrets)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel/
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Editors/OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+```
+Notes:
+- Do commit your lockfile (e.g., package-lock.json) and Next’s next-env.d.ts.
+- If you want to share editor settings, remove or tweak the .vscode/ and .idea/ ignores.
+
